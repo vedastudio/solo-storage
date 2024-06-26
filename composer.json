@@ -1,0 +1,24 @@
+{
+  "name": "vedastudio/solo-storage",
+  "type": "library",
+  "description": "Simple PHP Data Storage",
+  "keywords": ["php","data", "storage"],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Vitaliy Olos",
+      "email": "vedastudio@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Solo\\": "Solo/"
+    }
+  },
+  "require": {
+    "php": "^8.2",
+    "vedastudio/solo-session": "dev-main"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
