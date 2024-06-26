@@ -20,8 +20,12 @@ class FileStorage implements StorageInterface
 
     public function get(string $key): ?string
     {
-        $filePath = $this->storageFolder . $key;
-        return file_exists($filePath) ? file_get_contents($filePath) : null;
+        return $this->has($key) ? file_get_contents($this->storageFolder . $key) : null;
+    }
+
+    public function has(string $key): bool
+    {
+        return file_exists($this->storageFolder . $key);
     }
 
     public function delete(string $key): bool

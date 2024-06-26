@@ -21,6 +21,11 @@ class SessionStorage implements StorageInterface
         return $this->session->get($key);
     }
 
+    public function has(string $key): bool
+    {
+        return $this->session->has($key);
+    }
+
     public function delete(string $key): bool
     {
         $this->session->unset($key);
