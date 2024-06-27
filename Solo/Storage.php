@@ -1,8 +1,8 @@
 <?php declare(strict_types=1);
 
-namespace Solo\Storage;
+namespace Solo;
 
-class FileStorage implements StorageInterface
+class Storage
 {
     private string $storageFolder;
 

@@ -16,8 +16,7 @@
     }
   },
   "require": {
-    "php": "^8.2",
-    "vedastudio/solo-session": "dev-main"
+    "php": "^8.2"
   },
   "minimum-stability": "dev",
   "prefer-stable": true
